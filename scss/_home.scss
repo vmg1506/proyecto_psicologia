@@ -1,0 +1,49 @@
+
+.contenedor1 {
+    display: grid;
+    grid-template-columns: 47% 47% 6%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "cont1 cont2 cont3";
+    background-color: rgb(134, 142, 190);
+    height: 600px;
+  }
+  
+  .cont1 {
+    grid-area: cont1;
+    background-image: url(../img/img_02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .cont2 {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    grid-template-areas: "sub_cont2";
+    grid-area: cont2;
+  }
+  
+  .sub_cont2 {
+    grid-area: sub_cont2;
+    a {
+        text-decoration: none;
+        color: black;
+        background-color: rgb(134, 181, 252);
+        border-radius: 25px;
+        padding: 10px 10px 10px 10px;
+    }
+  }
+  
+  .cont3 {
+    grid-area: cont3;
+  }
