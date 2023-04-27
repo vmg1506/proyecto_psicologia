@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 .contenedor1 {
   display: grid;
-  grid-template-columns: 47% 47% 6%;
+  grid-template-columns: 52% 38% 10%;
   grid-template-rows: 100%;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -43,10 +44,210 @@
   background-color: rgb(134, 181, 252);
   border-radius: 25px;
   padding: 10px 10px 10px 10px;
+  position: relative;
+  top: 150PX;
 }
 
 .cont3 {
   grid-area: cont3;
+}
+
+.seccion2 {
+  height: 600px;
+}
+
+.contendor2 {
+  display: grid;
+  grid-template-columns: 35% 35%;
+  grid-template-rows: 100%;
+  gap: 70px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "info1 info2";
+  height: 600px;
+}
+
+.info1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: info1;
+}
+.info1 h4 {
+  font-weight: 100;
+  position: relative;
+  bottom: 5%;
+}
+.info1 h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.info1 hr {
+  width: 50%;
+  background-color: black;
+  height: 5px;
+}
+.info1 a {
+  text-decoration: none;
+  background-color: rgb(134, 181, 252);
+  border-radius: 25px;
+  color: black;
+  width: 110px;
+  text-align: center;
+  position: relative;
+  top: 5%;
+}
+
+.info2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: info2;
+}
+.info2 p {
+  font-size: 1.5rem;
+}
+
+.seccion3 {
+  background-color: rgb(218, 219, 253);
+}
+
+.contenedor3 {
+  display: grid;
+  grid-template-columns: 40% 35%;
+  grid-template-rows: 40% 40%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "imagen box1" "imagen box2";
+  height: 1000px;
+}
+
+.imagen {
+  grid-area: imagen;
+  background-image: url(../img/img_03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: -23px 24px 0px -3px rgb(255, 124, 124);
+  z-index: 999;
+}
+
+.box1 {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-template-rows: 85%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_box1";
+  grid-area: box1;
+  background-color: white;
+}
+
+.sub_box1 {
+  grid-area: sub_box1;
+}
+
+.box2 {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-template-rows: 85%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_box2";
+  grid-area: box2;
+  background-color: white;
+  box-shadow: -47px 24px 0px -3px rgb(255, 124, 124);
+}
+
+.sub_box2 {
+  grid-area: sub_box2;
+}
+
+.seccion4 {
+  height: 600px;
+}
+
+.contenedor4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "area1 area3" "area2 area3";
+  height: 100%;
+}
+
+.area3 {
+  display: grid;
+  grid-template-columns: 65%;
+  grid-template-rows: 80%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_area3";
+  grid-area: area3;
+}
+
+.sub_area3 {
+  grid-area: sub_area3;
+  background-image: url(../img/img_04.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: -52px 49px 0px -3px rgb(84, 102, 141);
+  z-index: 999;
+}
+
+.area2 {
+  display: grid;
+  grid-template-columns: 75%;
+  grid-template-rows: 75%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_area2";
+  grid-area: area2;
+}
+
+.sub_area2 {
+  grid-area: sub_area2;
+}
+
+.area1 {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-template-rows: 85%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_area1";
+  grid-area: area1;
+}
+
+.sub_area1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: sub_area1;
+}
+.sub_area1 h2 {
+  font-size: 3vw;
+  font-weight: 600;
+}
+.sub_area1 p {
+  font-size: 1.5rem;
 }
 
 * {
@@ -54,8 +255,20 @@
   padding: 0;
   border: 0;
 }
+* h1 {
+  font-family: "Oswald", sans-serif;
+}
 * h2 {
-  font-family: "Vina Sans", cursive;
+  font-family: "Oswald", sans-serif;
+}
+* h3 {
+  font-family: "Oswald", sans-serif;
+}
+* h4 {
+  font-family: "Oswald", sans-serif;
+}
+* h5 {
+  font-family: "Oswald", sans-serif;
 }
 * p {
   font-family: "Heebo", sans-serif;
