@@ -238,8 +238,8 @@
   
   .area1 {
     display: grid;
-    grid-template-columns: 85%;
-    grid-template-rows: 85%;
+    grid-template-columns: 75%;
+    grid-template-rows: 75%;
     gap: 0px 0px;
     grid-auto-flow: row;
     justify-content: center;
@@ -249,12 +249,11 @@
   }
   
   .sub_area1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
+    align-items: center;
     grid-area: sub_area1;
     h2 {
-      font-size: 3vw;
+      font-size: 2.5vw;
       font-weight: 600;
     }
     p {
