@@ -314,7 +314,7 @@
   width: 450px;
   background-color: rgb(84, 102, 141);
   border-radius: 200px 0px 200px 0px;
-  box-shadow: 32px 29px 17px 8px rgb(218, 219, 253);
+  box-shadow: 32px 29px 17px 8px rgb(186, 188, 252);
   position: relative;
   top: 80px;
   color: white;
@@ -335,6 +335,135 @@
 }
 .flex3 h2 {
   padding-bottom: 10px;
+}
+
+.contenedor5 {
+  display: grid;
+  grid-template-columns: 27.5% 45% 27.5%;
+  grid-template-rows: 27.5% 45% 27.5%;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  height: 1000px;
+  grid-template-areas: ". parent1 ." "parent2 img parent3" ". parent4 .";
+  margin-top: 15px;
+}
+.contenedor5 p {
+  font-size: 1.2rem;
+}
+
+.img {
+  grid-area: img;
+  background-image: url(../img/img_06.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.parent1 {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 90%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_parent1";
+  grid-area: parent1;
+}
+
+.sub_parent1 {
+  grid-area: sub_parent1;
+}
+
+.parent2 {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 90%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_parent2";
+  grid-area: parent2;
+}
+
+.sub_parent2 {
+  grid-area: sub_parent2;
+}
+
+.parent4 {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 90%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_parent4";
+  grid-area: parent4;
+}
+
+.sub_parent4 {
+  grid-area: sub_parent4;
+}
+
+.parent3 {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 90%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_parent3";
+  grid-area: parent3;
+}
+
+.sub_parent3 {
+  grid-area: sub_parent3;
+}
+
+.seccion6 {
+  height: 1400px;
+  background-color: #adcce9;
+  position: absolute;
+  width: 100%;
+}
+.seccion6 .pink {
+  background-color: #fbadb0;
+  width: 25%;
+  height: 100%;
+  position: relative;
+  left: 45%;
+}
+.seccion6 .couple {
+  background-image: url(../img/img_08.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 800px;
+  height: 650px;
+  position: relative;
+  bottom: 89%;
+  left: 35%;
+}
+.seccion6 .banner1 {
+  height: 550px;
+  width: 550px;
+  background-color: white;
+  position: relative;
+  bottom: 100%;
+  left: 15%;
+}
+.seccion6 .banner2 {
+  height: 450px;
+  width: 450px;
+  background-color: white;
+  position: relative;
+  bottom: 130%;
+  left: 65%;
 }
 
 * {
