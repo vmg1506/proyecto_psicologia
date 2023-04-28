@@ -127,10 +127,10 @@
 
 .imagen {
   grid-area: imagen;
-  background-image: url(../img/img_03.jpg);
+  background-image: url(../img/img_05.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: left;
   box-shadow: -23px 24px 0px -3px rgb(255, 124, 124);
   z-index: 999;
 }
@@ -149,9 +149,14 @@
 }
 
 .sub_box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-area: sub_box1;
 }
-
+.sub_box1 h2 {
+  font-size: 3rem;
+}
 .box2 {
   display: grid;
   grid-template-columns: 85%;
@@ -167,7 +172,12 @@
 }
 
 .sub_box2 {
+  display: flex;
+  align-items: left;
   grid-area: sub_box2;
+}
+.sub_box2 p {
+  font-size: 1.4rem;
 }
 
 .seccion4 {
@@ -255,7 +265,7 @@
 }
 
 .seccion4_1 {
-  background-color: rgb(228, 230, 235);
+  background-color: rgb(195, 211, 250);
 }
 
 .contenedor4_1 {
@@ -300,7 +310,7 @@
   flex-direction: column;
   justify-content: center;
   height: 400px;
-  width: 400px;
+  width: 450px;
   background-color: rgb(84, 102, 141);
   border-radius: 200px 0px 200px 0px;
   box-shadow: 32px 29px 17px 8px rgb(218, 219, 253);
