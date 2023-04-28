@@ -157,6 +157,7 @@
 .sub_box1 h2 {
   font-size: 3rem;
 }
+
 .box2 {
   display: grid;
   grid-template-columns: 85%;
