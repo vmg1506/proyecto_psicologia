@@ -36,26 +36,61 @@
 }
 
 .sub_cont2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   grid-area: sub_cont2;
+  font-size: 1rem;
 }
 .sub_cont2 a {
   text-decoration: none;
+  text-align: center;
   color: black;
+  width: 23%;
   background-color: rgb(134, 181, 252);
   border-radius: 25px;
   padding: 10px 10px 10px 10px;
-  position: relative;
-  top: 150PX;
 }
 
 .cont3 {
   grid-area: cont3;
 }
 
-.seccion2 {
-  height: 600px;
+@media (max-width: 767px) {
+  .seccion1 {
+    height: 600px;
+  }
+  .contenedor1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "cont3" "cont1" "cont2";
+  }
+  .cont1 {
+    grid-area: cont1;
+  }
+  .cont2 {
+    display: grid;
+    grid-template-columns: 85%;
+    grid-template-rows: 85%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_cont2";
+    grid-area: cont2;
+  }
+  .sub_cont2 {
+    grid-area: sub_cont2;
+  }
+  .cont3 {
+    grid-area: cont3;
+  }
 }
-
 .contendor2 {
   display: grid;
   grid-template-columns: 35% 35%;
@@ -65,7 +100,7 @@
   justify-content: center;
   align-content: center;
   grid-template-areas: "info1 info2";
-  height: 600px;
+  height: 60vw;
 }
 
 .info1 {
@@ -74,13 +109,13 @@
   justify-content: center;
   grid-area: info1;
 }
-.info1 h4 {
+.info1 font h4 {
   font-weight: 100;
   position: relative;
   bottom: 5%;
 }
 .info1 h2 {
-  font-size: 3.5rem;
+  font-size: 4vw;
   font-weight: 600;
 }
 .info1 hr {
@@ -93,7 +128,8 @@
   background-color: rgb(134, 181, 252);
   border-radius: 25px;
   color: black;
-  width: 110px;
+  width: 17vw;
+  font-size: 2.2vw;
   text-align: center;
   position: relative;
   top: 5%;
@@ -106,7 +142,7 @@
   grid-area: info2;
 }
 .info2 p {
-  font-size: 1.5rem;
+  font-size: 3vw;
 }
 
 .seccion3 {
@@ -155,7 +191,7 @@
   grid-area: sub_box1;
 }
 .sub_box1 h2 {
-  font-size: 3rem;
+  font-size: 3vw;
 }
 
 .box2 {
@@ -178,9 +214,70 @@
   grid-area: sub_box2;
 }
 .sub_box2 p {
-  font-size: 1.4rem;
+  font-size: 1.5vw;
 }
 
+@media (max-width: 767px) {
+  .seccion3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+  .contenedor3 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "box1" "imagen" "box2";
+    width: 60%;
+    height: 60%;
+    box-shadow: -23px 24px 0px -3px rgb(255, 124, 124);
+  }
+  .imagen {
+    grid-area: imagen;
+    box-shadow: -23px 24px 0px -3px transparent;
+  }
+  .box1 {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 90%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_box1";
+    grid-area: box1;
+  }
+  .sub_box1 {
+    grid-area: sub_box1;
+  }
+  .box2 {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 90%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_box2";
+    grid-area: box2;
+    margin-top: 10px;
+    box-shadow: -23px 24px 0px -3px transparent;
+  }
+  .sub_box2 {
+    display: flex;
+    align-items: center;
+    grid-area: sub_box2;
+  }
+  .sub_box2 p {
+    font-size: 1.6vw;
+  }
+}
 .seccion4 {
   height: 600px;
 }
@@ -225,6 +322,7 @@
   grid-template-rows: 75%;
   gap: 0px 0px;
   grid-auto-flow: row;
+  background-color: mageta;
   justify-content: center;
   align-content: center;
   grid-template-areas: "sub_area2";
@@ -258,15 +356,60 @@
   font-weight: 600;
 }
 .sub_area1 p {
-  font-size: 1.5rem;
+  font-size: 2.8vw;
 }
 .sub_area1 a {
   background-color: rgb(134, 181, 252);
   color: black;
 }
 
+@media (max-width: 767px) {
+  .seccion4 {
+    height: 700px;
+  }
+  .contenedor4 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "area3" "area1";
+  }
+  .area1 {
+    display: grid;
+    grid-template-columns: 75%;
+    grid-template-rows: 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_area1";
+    grid-area: area1;
+  }
+  .sub_area1 {
+    grid-area: sub_area1;
+  }
+  .area3 {
+    display: grid;
+    grid-template-columns: 75%;
+    grid-template-rows: 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_area3";
+    grid-area: area3;
+  }
+  .sub_area3 {
+    grid-area: sub_area3;
+  }
+}
 .seccion4_1 {
   background-color: rgb(195, 211, 250);
+  height: 700px;
 }
 
 .contenedor4_1 {
@@ -294,8 +437,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 400px;
-  width: 400px;
+  height: 25vw;
+  width: 25vw;
   background-color: rgb(107, 163, 247);
   border-radius: 200px 0px 200px 0px;
   box-shadow: 32px 29px 17px 8px pink;
@@ -310,8 +453,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 400px;
-  width: 450px;
+  height: 25vw;
+  width: 30vw;
   background-color: rgb(84, 102, 141);
   border-radius: 200px 0px 200px 0px;
   box-shadow: 32px 29px 17px 8px rgb(186, 188, 252);
@@ -327,8 +470,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 400px;
-  width: 400px;
+  height: 25vw;
+  width: 25vw;
   background-color: rgb(122, 131, 161);
   border-radius: 200px 0px 200px 0px;
   box-shadow: 32px 29px 17px 8px rgb(254, 254, 254);
@@ -337,6 +480,28 @@
   padding-bottom: 10px;
 }
 
+@media (max-width: 767px) {
+  .seccion4_1 {
+    height: 1200px;
+  }
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+  }
+  .flex1 {
+    justify-self: center;
+    align-self: center;
+  }
+  .flex2 {
+    justify-self: center;
+    align-self: center;
+  }
+  .flex3 {
+    justify-self: center;
+    align-self: center;
+  }
+}
 .contenedor5 {
   display: grid;
   grid-template-columns: 27.5% 45% 27.5%;
