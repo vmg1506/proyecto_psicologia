@@ -486,7 +486,7 @@
   }
   .flexbox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 95%;
   }
   .flex1 {
