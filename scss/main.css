@@ -482,24 +482,53 @@
 
 @media (max-width: 767px) {
   .seccion4_1 {
-    height: 1200px;
+    height: 2000px;
+  }
+  .contenedor4_1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "encabezado" "flexbox" "flexbox" "flexbox";
+    height: 100%;
   }
   .flexbox {
-    display: flex;
-    flex-direction: row;
-    height: 95%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "flex1" "flex2" "flex3";
+    grid-area: flexbox;
   }
   .flex1 {
     justify-self: center;
     align-self: center;
+    grid-area: flex1;
+    width: auto;
+    height: auto;
   }
   .flex2 {
     justify-self: center;
     align-self: center;
+    grid-area: flex2;
+    width: auto;
+    height: auto;
   }
   .flex3 {
     justify-self: center;
     align-self: center;
+    grid-area: flex3;
+    width: auto;
+    height: auto;
+  }
+  .encabezado {
+    grid-area: encabezado;
   }
 }
 .contenedor5 {
