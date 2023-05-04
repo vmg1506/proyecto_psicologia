@@ -789,4 +789,122 @@
 }
 * p {
   font-family: "Heebo", sans-serif;
+}
+
+.landing1 {
+  height: 90px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/img_09.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.landing2 {
+  background-color: rgb(230, 222, 252);
+  height: 800px;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "profile_img profile_txt";
+  height: 400px;
+  z-index: 999;
+}
+
+.profile_img {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 90%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+  background-image: url(../img/icon_02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  grid-template-areas: "sub_profile_img";
+  grid-area: profile_img;
+  box-shadow: -37px 36px 17px 8px rgba(0, 0, 0, 0.75);
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+.profile_img .white {
+  height: 400px;
+  width: 200px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.sub_profile_img {
+  grid-area: sub_profile_img;
+  z-index: 999;
+}
+
+.profile_txt {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 70%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "sub_profile_txt";
+  grid-area: profile_txt;
+}
+
+.sub_profile_txt {
+  grid-area: sub_profile_txt;
+}
+
+.profile2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.profile2 .profile2_txt1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(199, 240, 250);
+  height: 300px;
+  width: 300px;
+  border-radius: 30px;
+  padding: 0px 15px 0px 15px;
+}
+.profile2 .profile2_txt2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(252, 253, 254);
+  height: 300px;
+  width: 300px;
+  border-radius: 30px;
+  padding: 0px 15px 0px 15px;
+}
+.profile2 .profile2_txt3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(180, 201, 242);
+  height: 300px;
+  width: 300px;
+  border-radius: 30px;
+  padding: 0px 15px 0px 15px;
 }/*# sourceMappingURL=main.css.map */
