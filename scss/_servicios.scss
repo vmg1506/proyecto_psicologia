@@ -231,7 +231,7 @@
     align-items: left;
     grid-area: sub_box2;
     p {
-      font-size: 1.5vw;
+      font-size: 1.3vw;
     }
   }
 
@@ -456,7 +456,7 @@
     h2 {
       font-weight: 600;
       font-size: 3.5rem;
-      padding-bottom: 90px;
+      padding-bottom: 10px;
       padding-top: 10px;
     }
     p {
@@ -656,13 +656,102 @@
     grid-template-areas: "sub_parent3";
     grid-area: parent3;
   }
+
+@media (max-width: 767px) {
+  .seccion5 {
+    height: 2300px;
+  }
+  .contenedor5 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "parent1" "parent2" "img" "parent3" "parent4";
+    height: 100%;
+  }
+  
+  .parent1 {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 90%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_parent1";
+    grid-area: parent1;
+  }
+  
+  .sub_parent1 {
+    grid-area: sub_parent1;
+    font-size: smaller;
+  }
+  
+  .parent2 {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 90%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_parent2";
+    grid-area: parent2;
+  }
+  
+  .sub_parent2 {
+    grid-area: sub_parent2;
+    font-size: smaller;
+  }
+  
+  .img {
+    grid-area: img;
+    margin: 75px 0px 35px 0px;
+  }
+  
+  .parent3 {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 90%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_parent3";
+    grid-area: parent3;
+  }
+  
+  .sub_parent3 {
+    grid-area: sub_parent3;
+    font-size: smaller;
+  }
+  
+  .parent4 {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 90%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "sub_parent4";
+    grid-area: parent4;
+  }
+  
+  .sub_parent4 {
+    grid-area: sub_parent4;
+    font-size: smaller;
+  }
+}
+
   
   .sub_parent3 {
     grid-area: sub_parent3;
   }
 
   .seccion6 {
-    height: 900px;
+    height: 600px;
     background-color: #adcce9;
     width: 100%;
     .pink {
@@ -677,18 +766,19 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      width: 47%;
-      height: 55%;
+      width: 37vw;
+      height: 45vw;
       position: relative;
       bottom: 89%;
       left: 35%;
+      padding: 50x 0px 50px 0px; 
     }
     .banner1 {
       display: flex;
       flex-direction: column;
       justify-content: center;
       height: 40%;
-      width: 30%;
+      width: 40%;
       background-color: white;
       position: relative;
       bottom: 100%;
@@ -697,6 +787,7 @@
       padding: 15px 15px 15px 15px;
       h2 {
         margin-bottom: 25px;
+        font-size: smaller;
       }
       .separador {
         border-bottom: 3px solid black;
@@ -707,15 +798,15 @@
         margin-top: 35px;
       }
       p {
-        font-size: 1.13rem;
+        font-size: 1.13vw;
       }
     }
     .banner2 {
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 35%;
-      width: 25%;
+      height: 45vw;
+      width: 32vw;
       background-color: rgb(248, 245, 245);
       position: relative;
       bottom: 135%;
@@ -723,12 +814,12 @@
       .terapia_pareja {
         text-align: left;
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 1.7vw;
         margin: 25px 25px 25px 25px;
       }
     }
   }
-    
 
+ 
 
  
