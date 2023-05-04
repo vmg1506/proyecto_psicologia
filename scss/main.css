@@ -806,7 +806,7 @@
 }
 
 .landing2 {
-  background-color: rgb(230, 222, 252);
+  background-color: rgb(221, 208, 250);
   height: 800px;
 }
 
@@ -844,13 +844,6 @@
   height: 200px;
   width: 200px;
 }
-.profile_img .white {
-  height: 400px;
-  width: 200px;
-  background-color: white;
-  position: relative;
-  z-index: 1;
-}
 
 .sub_profile_img {
   grid-area: sub_profile_img;
@@ -871,6 +864,18 @@
 
 .sub_profile_txt {
   grid-area: sub_profile_txt;
+}
+.sub_profile_txt h1 {
+  font-size: 4.5vw;
+  font-weight: 900;
+}
+.sub_profile_txt h2 {
+  font-size: 3vw;
+  font-weight: 600;
+}
+.sub_profile_txt p {
+  font-size: 1.35vw;
+  font-weight: 100;
 }
 
 .profile2 {
