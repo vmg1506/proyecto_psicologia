@@ -807,7 +807,7 @@
 
 .landing2 {
   background-color: rgb(221, 208, 250);
-  height: 800px;
+  height: 1200px;
 }
 
 .profile {
@@ -821,6 +821,7 @@
   grid-template-areas: "profile_img profile_txt";
   height: 400px;
   z-index: 999;
+  padding-top: 20%;
 }
 
 .profile_img {
@@ -833,7 +834,7 @@
   justify-self: center;
   align-self: center;
   align-content: center;
-  background-image: url(../img/icon_02.jpg);
+  background-image: url(../img/valen.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -841,8 +842,8 @@
   grid-area: profile_img;
   box-shadow: -37px 36px 17px 8px rgba(0, 0, 0, 0.75);
   border-radius: 100%;
-  height: 200px;
-  width: 200px;
+  height: 450px;
+  width: 450px;
 }
 
 .sub_profile_img {
@@ -880,6 +881,7 @@
 
 .profile2 {
   display: flex;
+  margin-top: 25%;
   justify-content: space-around;
   align-items: center;
 }
