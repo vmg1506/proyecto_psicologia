@@ -29,7 +29,7 @@
     justify-content: center;
     align-content: center;
     grid-template-areas: "profile_img profile_txt";
-    height: 400px;
+    height: 500px;
     z-index: 999;
     padding-top: 20%;
    
@@ -52,9 +52,11 @@
     grid-template-areas: "sub_profile_img";
     grid-area: profile_img;
     box-shadow: -37px 36px 17px 8px rgba(0,0,0,0.75);
-    border-radius: 100%;
-    height: 450px;
-    width: 450px;
+    border-radius: 3%;
+    position: relative;
+    left: 5%;
+    height: 700px;
+    width: 500px;
     
     
   }
@@ -62,6 +64,7 @@
   .sub_profile_img {
     grid-area: sub_profile_img;
     z-index: 999;
+    
     
     
   }
@@ -76,6 +79,7 @@
     align-content: center;
     grid-template-areas: "sub_profile_txt";
     grid-area: profile_txt;
+    
   }
   
   .sub_profile_txt {
