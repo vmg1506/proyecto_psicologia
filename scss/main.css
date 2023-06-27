@@ -881,7 +881,7 @@
   font-weight: 600;
 }
 .sub_profile_txt p {
-  font-size: 1.6vw;
+  font-size: 1.85vw;
   font-weight: 100;
   padding-top: 15px;
 }
@@ -951,10 +951,11 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
+  grid-gap: 5px;
   grid-template-areas: "local_1 local_2" "local_3 local_4";
-  height: 400px;
-  width: 400px;
-  margin: 50px 0px 0px 50px;
+  height: 500px;
+  width: 500px;
+  padding: 50px 0px 0px 50px;
 }
 .local .local_1 {
   grid-area: local_1;
