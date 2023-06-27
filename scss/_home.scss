@@ -114,6 +114,10 @@
       justify-content: center;
       text-align: center;
       font-size: 3vw;
+      font-weight: 600;
+      p{
+        font-family: 'Gabriela', serif;
+      }
     }
 }
   
@@ -126,17 +130,47 @@
 	grid-template-areas: "profile2_txt1 profile2_txt2 profile2_txt3";
   height: 300px;
   text-align: center;
+  h2{
+    font-weight: 600;
+  }
+  p{
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 1.5vw;
+    
+  }
   .profile2_txt1 {
     grid-area: profile2_txt1;
-    background-color: rgb(175, 165, 188);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/fondo_purpura.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(208, 211, 237);
   }
   .profile2_txt2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-area: profile2_txt2;
-    background-color: rgb(212, 212, 206);
+    background-image: url(../img/fondo_cafe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(213, 196, 207);
   }
   .profile2_txt3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-area: profile2_txt3;
-    background-color: rgb(234, 234, 229);
+    background-image: url(../img/fondo_rosa_suave.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(246, 210, 237);
   }
  
 }

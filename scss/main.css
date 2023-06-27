@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap");
 .contenedor1 {
   display: grid;
   grid-template-columns: 52% 38% 10%;
@@ -899,6 +900,10 @@
   justify-content: center;
   text-align: center;
   font-size: 3vw;
+  font-weight: 600;
+}
+.descripcion .descripcion_txt p {
+  font-family: "Gabriela", serif;
 }
 
 .profile2 {
@@ -911,15 +916,44 @@
   height: 300px;
   text-align: center;
 }
+.profile2 h2 {
+  font-weight: 600;
+}
+.profile2 p {
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 1.5vw;
+}
 .profile2 .profile2_txt1 {
   grid-area: profile2_txt1;
-  background-color: rgb(175, 165, 188);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../img/fondo_purpura.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgb(208, 211, 237);
 }
 .profile2 .profile2_txt2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-area: profile2_txt2;
-  background-color: rgb(212, 212, 206);
+  background-image: url(../img/fondo_cafe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgb(213, 196, 207);
 }
 .profile2 .profile2_txt3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-area: profile2_txt3;
-  background-color: rgb(234, 234, 229);
+  background-image: url(../img/fondo_rosa_suave.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgb(246, 210, 237);
 }/*# sourceMappingURL=main.css.map */
