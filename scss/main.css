@@ -1264,4 +1264,114 @@
   grid-template-columns: 25% 25% 25%;
   grid-template-rows: 100%;
   justify-content: center;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  align-content: space-around;
+  justify-items: stretch;
+  grid-template-areas: "formulario_titulo" "formulario_nombre" "formulario_apellido" "formulario_correo" "formulario_numero" "formulario_txt";
+  background-color: aqua;
+}
+
+.formulario_titulo {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-template-rows: 65%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  align-content: space-around;
+  grid-template-areas: "sub_formulario_titulo";
+  justify-self: stretch;
+  grid-area: formulario_titulo;
+}
+
+.sub_formulario_titulo {
+  grid-area: sub_formulario_titulo;
+}
+
+.formulario_nombre {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-template-rows: 65%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  align-content: space-around;
+  grid-template-areas: "sub_formulario_nombre";
+  grid-area: formulario_nombre;
+}
+
+.sub_formulario_nombre {
+  grid-area: sub_formulario_nombre;
+}
+
+.formulario_apellido {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-template-rows: 65%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  align-content: space-around;
+  grid-template-areas: "sub_formulario_apellido";
+  grid-area: formulario_apellido;
+}
+
+.sub_formulario_apellido {
+  grid-area: sub_formulario_apellido;
+}
+
+.formulario_correo {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-template-rows: 65%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  align-content: space-around;
+  grid-template-areas: "sub_formulario_correo";
+  grid-area: formulario_correo;
+}
+
+.sub_formulario_correo {
+  grid-area: sub_formulario_correo;
+}
+
+.formulario_numero {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-template-rows: 65%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  align-content: space-around;
+  grid-template-areas: "sub_formulario_numero";
+  grid-area: formulario_numero;
+}
+
+.sub_formulario_numero {
+  grid-area: sub_formulario_numero;
+}
+
+.formulario_txt {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-template-rows: 65%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  align-content: space-around;
+  grid-template-areas: "sub_formulario_txt";
+  grid-area: formulario_txt;
+}
+
+.sub_formulario_txt {
+  grid-area: sub_formulario_txt;
 }/*# sourceMappingURL=main.css.map */
