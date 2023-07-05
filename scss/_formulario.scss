@@ -1,20 +1,43 @@
 
 .cuerpo {
-    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 100%;
+    background-image: url(../img/fondo_aqua.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
 }
 
 .formulario {
     display: grid;
-    grid-template-columns: 50%;
-    grid-template-rows: 10% 10% 10% 10% 10% 20%;
+    grid-template-columns: 80%;
+    grid-template-rows: 10% 10% 10% 10% 10% 40%;
     justify-content: space-around;
     align-content: space-around;
     grid-template-areas: "formulario_titulo" "formulario_nombre" "formulario_apellido" "formulario_correo" "formulario_numero" "formulario_txt";
     background-color: aqua;
-    height: 1200px;
+    height: 35vw;
+    width: 55vw;
+    border-radius: 25px;
     label {
-        font-size: 2.5vh;
+        font-size: 3.5vh;
         font-family: 'Oswald', sans-serif;
+        padding-right: 25px;
+    }
+    input {
+      border-radius: 25px;
+      border: 1px black solid;
+      height: 3vh;
+    }
+    textarea {
+      border-radius: 10px;
+      border: 1px black solid;
+      
     }
   }
   
@@ -111,6 +134,13 @@
   }
   
   .sub_formulario_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-area: sub_formulario_txt;
+    textarea {
+      height: 17vh;
+    }
+  
   }
   

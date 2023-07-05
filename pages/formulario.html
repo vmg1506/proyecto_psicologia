@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="../scss/main.css">
     <title>Contactame!</title>
 </head>
-<body class="cuerpo">
-    <section>
+<body>
+    <section class="cuerpo">
     <div>
-        <div>
+        <div class="formulario">
             <form name="frmContacto" method="post" action="../php/sendByEmail.php">
-                <div class="formulario">
+                <div>
                     <div class="formulario_titulo">
                       <div class="sub_formulario_titulo">
                         <h1>Contacto</h1>
@@ -44,7 +44,7 @@
                     <div class="formulario_txt">
                       <div class="sub_formulario_txt">
                         <label for="comments">Consulta</label>
-                        <textarea name="comments" maxlength="500" cols="30" rows="10" placeholder="Escribe tu consulta..."></textarea>
+                        <textarea name="comments" maxlength="500" cols="30" rows="5" placeholder="Escribe tu consulta..."></textarea>
                       </div>
                     </div>
                   </div>
@@ -54,9 +54,6 @@
                 
                 
             </form>
-        </div>
-        <div>
-
         </div>
     </div>
     </section>
