@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 .contenedor1 {
   display: grid;
   grid-template-columns: 52% 38% 10%;
@@ -1266,6 +1267,11 @@
   justify-content: center;
 }
 
+/* .mensaje {
+  display: flex;
+  justify-content: center;
+
+} */
 .cuerpo {
   display: flex;
   flex-direction: column;
@@ -1273,130 +1279,389 @@
   align-items: center;
   height: 1000px;
   width: 100%;
-  background-image: url(../img/fondo_aqua.jpg);
+  background-image: url(../img/aquarela_2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-
-.formulario {
-  display: grid;
-  grid-template-columns: 80%;
-  grid-template-rows: 10% 10% 10% 10% 10% 40%;
-  justify-content: space-around;
-  align-content: space-around;
-  grid-template-areas: "formulario_titulo" "formulario_nombre" "formulario_apellido" "formulario_correo" "formulario_numero" "formulario_txt";
-  background-color: aqua;
-  height: 35vw;
-  width: 55vw;
-  border-radius: 25px;
-}
-.formulario label {
-  font-size: 3.5vh;
-  font-family: "Oswald", sans-serif;
-  padding-right: 25px;
-}
-.formulario input {
-  border-radius: 25px;
-  border: 1px black solid;
-  height: 3vh;
-}
-.formulario textarea {
-  border-radius: 10px;
-  border: 1px black solid;
+.cuerpo .contenedor {
+  border-radius: 15px;
+  background-color: rgba(163, 155, 234, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
-.formulario_titulo {
+.portada {
+  background-image: url(../img/portada_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top 25%;
+  display: flex;
+  justify-content: right;
+  height: 500px;
+}
+.portada .portada_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 700px;
+  border: white 4px solid;
+  margin: 100px 100px 0px 0px;
+  color: white;
+  border-style: double;
+}
+.portada .portada_txt h1 {
+  font-size: 3.5vw;
+  font-family: "Dancing Script", cursive;
+}
+
+.terapias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  margin: 50px 0px 50px 0px;
+}
+.terapias .terapia_1 {
   display: grid;
-  grid-template-columns: 85%;
-  grid-template-rows: 65%;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 100%;
+  grid-template-areas: "terapia_famila terapia_individual terapia_pareja";
+  font-size: 1.125vw;
+}
+.terapias .terapia_famila {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-area: terapia_famila;
+}
+.terapias .terapia_famila img {
+  height: 200px;
+  width: 200px;
+}
+.terapias .terapia_individual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: terapia_individual;
+  text-align: center;
+}
+.terapias .terapia_pareja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: terapia_pareja;
+}
+
+@media (max-width: 767px) {
+  .terapia {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "terapia_famila" "terapia_individual" "terapia_pareja";
+  }
+  .terapia_famila {
+    grid-area: terapia_famila;
+  }
+  .terapia_individual {
+    grid-area: terapia_individual;
+  }
+  .terapia_pareja {
+    grid-area: terapia_pareja;
+  }
+}
+.presentacion {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "presentacion_img presentacion_txt";
+  height: 800px;
+  background-image: url(../img/aquarela_3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.presentacion .presentacion_img {
+  grid-area: presentacion_img;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.presentacion .presentacion_img .presentacion_img1 {
+  background-image: url(../img/valen.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 25px;
+  box-shadow: -24px 0px 18px -1px rgba(0, 0, 0, 0.87);
+  -webkit-box-shadow: -24px 0px 18px -1px rgba(0, 0, 0, 0.87);
+  -moz-box-shadow: -24px 0px 18px -1px rgba(0, 0, 0, 0.87);
+  height: 650px;
+  width: 500px;
+}
+.presentacion .presentacion_txt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  grid-area: presentacion_txt;
+  position: relative;
+  bottom: 5%;
+  width: 750px;
+}
+.presentacion .presentacion_txt h1 {
+  font-weight: 900;
+}
+.presentacion .presentacion_txt .saludo {
+  position: relative;
+  bottom: 10%;
+}
+.presentacion .presentacion_txt .saludo_txt {
+  position: relative;
+  top: 10%;
+  font-size: 1.145vw;
+}
+.presentacion .txt1, .presentacion .txt2, .presentacion .txt3 {
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.sistemico {
+  height: 800px;
+}
+.sistemico .sistemico_general {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "sistemico_box sistemico_info";
+  height: 700px;
+}
+.sistemico .sistemico_box {
+  display: grid;
+  grid-template-columns: 75%;
+  grid-template-rows: 35% 65%;
   gap: 0px 0px;
   grid-auto-flow: row;
   justify-content: space-around;
   align-content: space-around;
-  grid-template-areas: "sub_formulario_titulo";
-  justify-self: stretch;
-  grid-area: formulario_titulo;
+  grid-template-areas: "sistemico_box_img" "sistemico_box_txt";
+  justify-self: center;
+  align-self: center;
+  grid-area: sistemico_box;
+  width: 75%;
+  height: 90%;
+  box-shadow: 0px 10px 100px -3px rgba(49, 212, 253, 0.5);
 }
-
-.sub_formulario_titulo {
-  grid-area: sub_formulario_titulo;
+.sistemico .sistemico_box .sistemico_box_img {
+  grid-area: sistemico_box_img;
+  background-image: url(../img/sistemico.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.sistemico .sistemico_box .sistemico_box_txt {
+  grid-area: sistemico_box_txt;
   text-align: center;
-  font-size: 4vh;
 }
-
-.formulario_nombre {
-  display: grid;
-  grid-template-columns: 85%;
-  grid-template-rows: 65%;
-  justify-content: space-around;
-  align-content: space-around;
-  grid-template-areas: "sub_formulario_nombre";
-  grid-area: formulario_nombre;
+.sistemico .sistemico_box .sistemico_box_txt h2 {
+  font-weight: 600;
+  margin: 15px 0px 15px 0px;
 }
-
-.sub_formulario_nombre {
-  grid-area: sub_formulario_nombre;
+.sistemico .sistemico_box .sistemico_box_txt p {
+  font-weight: 600;
 }
-
-.formulario_apellido {
-  display: grid;
-  grid-template-columns: 85%;
-  grid-template-rows: 65%;
-  justify-content: space-around;
-  align-content: space-around;
-  grid-template-areas: "sub_formulario_apellido";
-  grid-area: formulario_apellido;
-}
-
-.sub_formulario_apellido {
-  grid-area: sub_formulario_apellido;
-}
-
-.formulario_correo {
-  display: grid;
-  grid-template-columns: 85%;
-  grid-template-rows: 65%;
-  justify-content: space-around;
-  align-content: space-around;
-  grid-template-areas: "sub_formulario_correo";
-  grid-area: formulario_correo;
-}
-
-.sub_formulario_correo {
-  grid-area: sub_formulario_correo;
-}
-
-.formulario_numero {
-  display: grid;
-  grid-template-columns: 85%;
-  grid-template-rows: 65%;
-  justify-content: space-around;
-  align-content: space-around;
-  grid-template-areas: "sub_formulario_numero";
-  grid-area: formulario_numero;
-}
-
-.sub_formulario_numero {
-  grid-area: sub_formulario_numero;
-}
-
-.formulario_txt {
-  display: grid;
-  grid-template-columns: 85%;
-  grid-template-rows: 65%;
-  justify-content: space-around;
-  align-content: space-around;
-  grid-template-areas: "sub_formulario_txt";
-  grid-area: formulario_txt;
-}
-
-.sub_formulario_txt {
+.sistemico .sistemico_info {
+  grid-area: sistemico_info;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  grid-area: sub_formulario_txt;
+  text-align: center;
 }
-.sub_formulario_txt textarea {
-  height: 17vh;
+.sistemico .sistemico_info h2 {
+  font-weight: 600;
+  font-size: 3vw;
+}
+
+.servicios {
+  height: 600px;
+  background-color: rgb(97, 184, 255);
+}
+.servicios .precios {
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: 70%;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  align-content: space-around;
+  grid-template-areas: "precios_individual precios_pareja precios_familiar";
+  height: 600px;
+  text-align: center;
+}
+.servicios .precios_individual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: precios_individual;
+  position: relative;
+  perspective: 1000px;
+}
+.servicios .precios_individual .card {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  border: 3px solid white;
+  box-shadow: -20px 13px 100px 0px rgba(255, 255, 255, 0.6);
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+.servicios .precios_individual .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  color: white;
+}
+.servicios .precios_individual .card .card-body .card-subtitle {
+  color: lightgrey;
+}
+.servicios .precios_individual:hover .card {
+  transform: rotateY(180deg);
+}
+.servicios .cara.atras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 50%;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.servicios .precios_pareja {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: precios_pareja;
+  position: relative;
+  perspective: 1000px;
+}
+.servicios .precios_pareja .card {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  box-shadow: -20px 13px 100px 0px rgba(255, 255, 255, 0.6);
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+.servicios .precios_pareja .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  color: white;
+}
+.servicios .precios_pareja .card .card-body .card-subtitle {
+  color: lightgrey;
+}
+.servicios .precios_pareja:hover .card {
+  transform: rotateY(180deg);
+}
+.servicios .cara_atras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 50%;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.servicios .precios_familiar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-area: precios_familiar;
+  position: relative;
+  perspective: 1000px;
+}
+.servicios .precios_familiar .card {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  box-shadow: -20px 13px 100px 0px rgba(255, 255, 255, 0.6);
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+.servicios .precios_familiar .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  color: white;
+}
+.servicios .precios_familiar .card .card-body .card-subtitle {
+  color: lightgrey;
+}
+.servicios .precios_familiar:hover .card {
+  transform: rotateY(180deg);
+}
+.servicios .cara.atras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 50%;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.comentarios {
+  height: 500px;
+}
+.comentarios .carousel {
+  height: 500px;
+}
+.comentarios .d-block {
+  margin: 0 auto;
+  height: 500px;
+  width: 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+  position: relative;
+  width: 60px;
+  height: 6px;
+  border: none;
+  border-radius: 24px;
+}
+
+.carousel-indicators [data-bs-target] span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #7952b3;
+  border-radius: inherit;
 }/*# sourceMappingURL=main.css.map */
