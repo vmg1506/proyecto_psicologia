@@ -1317,64 +1317,73 @@
   font-family: "Dancing Script", cursive;
 }
 
-.terapias {
+.servicios_1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 500px;
   margin: 50px 0px 50px 0px;
 }
-.terapias .terapia_1 {
+
+.asesorias {
   display: grid;
   justify-content: center;
   align-items: center;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: 100%;
-  grid-template-areas: "terapia_famila terapia_individual terapia_pareja";
+  grid-template-areas: "asesoria_familia asesoria_individual asesoria_pareja";
   font-size: 1.125vw;
 }
-.terapias .terapia_famila {
+
+.asesoria_familia {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  grid-area: terapia_famila;
+  grid-area: asesoria_familia;
 }
-.terapias .terapia_famila img {
+.asesoria_familia img {
   height: 200px;
   width: 200px;
 }
-.terapias .terapia_individual {
+
+.asesoria_individual {
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-area: terapia_individual;
+  grid-area: asesoria_individual;
   text-align: center;
 }
-.terapias .terapia_pareja {
+
+.asesoria_pareja {
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-area: terapia_pareja;
+  grid-area: asesoria_pareja;
 }
 
 @media (max-width: 767px) {
-  .terapia {
+  .servicios_1 {
+    height: 800px;
+  }
+  .asesorias {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-columns: 80%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "terapia_famila" "terapia_individual" "terapia_pareja";
+    justify-content: space-around;
+    align-content: space-around;
+    grid-template-areas: "asesoria_familia" "asesoria_individual" "asesoria_pareja";
   }
-  .terapia_famila {
-    grid-area: terapia_famila;
+  .asesoria_familia {
+    grid-area: asesoria_familia;
   }
-  .terapia_individual {
-    grid-area: terapia_individual;
+  .asesoria_individual {
+    grid-area: asesoria_individual;
   }
-  .terapia_pareja {
-    grid-area: terapia_pareja;
+  .asesoria_pareja {
+    grid-area: asesoria_pareja;
   }
 }
 .presentacion {
@@ -1415,7 +1424,7 @@
   grid-area: presentacion_txt;
   position: relative;
   bottom: 5%;
-  width: 750px;
+  width: 550px;
 }
 .presentacion .presentacion_txt h1 {
   font-weight: 900;
@@ -1427,26 +1436,52 @@
 .presentacion .presentacion_txt .saludo_txt {
   position: relative;
   top: 10%;
-  font-size: 1.145vw;
+  font-size: 2.125vh;
 }
 .presentacion .txt1, .presentacion .txt2, .presentacion .txt3 {
   font-weight: 600;
   padding-top: 15px;
 }
 
+@media (max-width: 767px) {
+  .presentacion {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 1500px;
+    justify-content: space-around;
+    align-content: space-around;
+    grid-template-areas: "presentacion_img" "presentacion_txt";
+  }
+  .presentacion_img {
+    grid-area: presentacion_img;
+  }
+  .presentacion_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: presentacion_txt;
+  }
+  .presentacion_txt .saludo_txt {
+    width: 70%;
+  }
+}
 .sistemico {
   height: 800px;
 }
-.sistemico .sistemico_general {
+
+.sistemico_general {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 100%;
-  gap: 0px 0px;
-  grid-auto-flow: row;
+  margin-top: 75px;
   grid-template-areas: "sistemico_box sistemico_info";
   height: 700px;
 }
-.sistemico .sistemico_box {
+
+.sistemico_box {
   display: grid;
   grid-template-columns: 75%;
   grid-template-rows: 35% 65%;
@@ -1459,44 +1494,76 @@
   align-self: center;
   grid-area: sistemico_box;
   width: 75%;
-  height: 90%;
+  height: 100%;
   box-shadow: 0px 10px 100px -3px rgba(49, 212, 253, 0.5);
 }
-.sistemico .sistemico_box .sistemico_box_img {
+.sistemico_box .sistemico_box_img {
   grid-area: sistemico_box_img;
   background-image: url(../img/sistemico.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.sistemico .sistemico_box .sistemico_box_txt {
+.sistemico_box .sistemico_box_txt {
   grid-area: sistemico_box_txt;
   text-align: center;
 }
-.sistemico .sistemico_box .sistemico_box_txt h2 {
+.sistemico_box .sistemico_box_txt h2 {
   font-weight: 600;
   margin: 15px 0px 15px 0px;
 }
-.sistemico .sistemico_box .sistemico_box_txt p {
+.sistemico_box .sistemico_box_txt p {
   font-weight: 600;
 }
-.sistemico .sistemico_info {
+
+.sistemico_info {
   grid-area: sistemico_info;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-.sistemico .sistemico_info h2 {
+.sistemico_info h2 {
   font-weight: 600;
   font-size: 3vw;
 }
 
+@media (max-width: 767px) {
+  .sistemico {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    align-content: space-around;
+    grid-template-areas: "sistemico_general";
+  }
+  .sistemico_general {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50fr 50fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "sistemico_box" "sistemico_info";
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: sistemico_general;
+  }
+  .sistemico_box {
+    grid-area: sistemico_box;
+    height: 410px;
+  }
+  .sistemico_info {
+    grid-area: sistemico_info;
+  }
+}
 .servicios {
   height: 600px;
   background-color: rgb(97, 184, 255);
 }
-.servicios .precios {
+
+.precios {
   display: grid;
   grid-template-columns: 20% 20% 20%;
   grid-template-rows: 70%;
@@ -1509,7 +1576,8 @@
   height: 600px;
   text-align: center;
 }
-.servicios .precios_individual {
+
+.precios_individual {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1518,7 +1586,7 @@
   position: relative;
   perspective: 1000px;
 }
-.servicios .precios_individual .card {
+.precios_individual .card {
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -1527,7 +1595,7 @@
   transform-style: preserve-3d;
   transition: all 0.5s linear;
 }
-.servicios .precios_individual .card .card-body {
+.precios_individual .card .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1535,96 +1603,15 @@
   backface-visibility: hidden;
   color: white;
 }
-.servicios .precios_individual .card .card-body .card-subtitle {
+.precios_individual .card .card-body .card-subtitle {
   color: lightgrey;
 }
-.servicios .precios_individual:hover .card {
+
+.precios_individual:hover .card {
   transform: rotateY(180deg);
 }
-.servicios .cara.atras {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 50%;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-}
-.servicios .precios_pareja {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  grid-area: precios_pareja;
-  position: relative;
-  perspective: 1000px;
-}
-.servicios .precios_pareja .card {
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  border: 1px solid white;
-  box-shadow: -20px 13px 100px 0px rgba(255, 255, 255, 0.6);
-  transform-style: preserve-3d;
-  transition: all 0.5s linear;
-}
-.servicios .precios_pareja .card .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  backface-visibility: hidden;
-  color: white;
-}
-.servicios .precios_pareja .card .card-body .card-subtitle {
-  color: lightgrey;
-}
-.servicios .precios_pareja:hover .card {
-  transform: rotateY(180deg);
-}
-.servicios .cara_atras {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 50%;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-}
-.servicios .precios_familiar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  grid-area: precios_familiar;
-  position: relative;
-  perspective: 1000px;
-}
-.servicios .precios_familiar .card {
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  border: 1px solid white;
-  box-shadow: -20px 13px 100px 0px rgba(255, 255, 255, 0.6);
-  transform-style: preserve-3d;
-  transition: all 0.5s linear;
-}
-.servicios .precios_familiar .card .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  backface-visibility: hidden;
-  color: white;
-}
-.servicios .precios_familiar .card .card-body .card-subtitle {
-  color: lightgrey;
-}
-.servicios .precios_familiar:hover .card {
-  transform: rotateY(180deg);
-}
-.servicios .cara.atras {
+
+.cara.atras {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1635,13 +1622,128 @@
   backface-visibility: hidden;
 }
 
+.precios_pareja {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: precios_pareja;
+  position: relative;
+  perspective: 1000px;
+}
+.precios_pareja .card {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  box-shadow: -20px 13px 100px 0px rgba(255, 255, 255, 0.6);
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+.precios_pareja .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  color: white;
+}
+.precios_pareja .card .card-body .card-subtitle {
+  color: lightgrey;
+}
+
+.precios_pareja:hover .card {
+  transform: rotateY(180deg);
+}
+
+.cara_atras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 50%;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.precios_familiar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-area: precios_familiar;
+  position: relative;
+  perspective: 1000px;
+}
+.precios_familiar .card {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  box-shadow: -20px 13px 100px 0px rgba(255, 255, 255, 0.6);
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+.precios_familiar .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  color: white;
+}
+.precios_familiar .card .card-body .card-subtitle {
+  color: lightgrey;
+}
+
+.precios_familiar:hover .card {
+  transform: rotateY(180deg);
+}
+
+.cara.atras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 50%;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  .servicios {
+    height: 600px;
+  }
+  .precios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "precios_individual" "precios_pareja" "precios_familiar";
+  }
+  .precios_individual {
+    grid-area: precios_individual;
+  }
+  .precios_pareja {
+    grid-area: precios_pareja;
+  }
+  .precios_familiar {
+    grid-area: precios_familiar;
+  }
+}
 .comentarios {
   height: 500px;
 }
-.comentarios .carousel {
+
+.carousel {
   height: 500px;
 }
-.comentarios .d-block {
+
+.d-block {
   margin: 0 auto;
   height: 500px;
   width: 50%;
@@ -1664,4 +1766,14 @@
   height: 100%;
   background: #7952b3;
   border-radius: inherit;
+}
+
+@media (max-width: 767px) {
+  .comentarios {
+    height: 250px;
+  }
+  .d-block {
+    height: 250px;
+    width: 40%;
+  }
 }/*# sourceMappingURL=main.css.map */

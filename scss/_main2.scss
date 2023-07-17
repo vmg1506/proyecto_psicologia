@@ -24,70 +24,75 @@
     }
 }
 
-.terapias {
+.servicios_1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 500px;
     margin: 50px 0px 50px 0px;
-    .terapia_1 {
+}
+    .asesorias {
         display: grid;
         justify-content: center;
         align-items: center;
         grid-template-columns: 33.3% 33.3% 33.3%;
         grid-template-rows: 100%;
-        grid-template-areas: "terapia_famila terapia_individual terapia_pareja";
+        grid-template-areas: 
+        "asesoria_familia asesoria_individual asesoria_pareja";
         font-size: 1.125vw;
     }
-    .terapia_famila {
+    .asesoria_familia {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        grid-area: terapia_famila;
+        grid-area: asesoria_familia;
         img {
             height: 200px;
             width: 200px;
         }
     }
-    .terapia_individual {
+    .asesoria_individual {
         display: flex;
         flex-direction: column;
         align-items: center;
-        grid-area: terapia_individual;
+        grid-area: asesoria_individual;
         text-align: center;
     }
-    .terapia_pareja {
+    .asesoria_pareja {
         display: flex;
         flex-direction: column;
         align-items: center;
-        grid-area: terapia_pareja;
+        grid-area: asesoria_pareja;
     }
-}
+
 
 @media (max-width: 767px) {
-    .terapia {
+    .servicios_1 {
+        height: 800px;
+    }
+    .asesorias {
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 33.3% 33.3% 33.3%;
+        grid-template-columns: 80%;
+        grid-template-rows: 33.33% 33.33% 33.33%;
         gap: 0px 0px;
         grid-auto-flow: row;
-        grid-template-areas: "terapia_famila" "terapia_individual" "terapia_pareja";
-      }
+        justify-content: space-around;
+        align-content: space-around;
+        grid-template-areas: "asesoria_familia" "asesoria_individual" "asesoria_pareja";
+    }
+    .asesoria_familia {
+        grid-area: asesoria_familia;
+    }
+    .asesoria_individual {
+        grid-area: asesoria_individual;
+    }
+    .asesoria_pareja {
+        grid-area: asesoria_pareja;
+    }
       
-      .terapia_famila {
-        grid-area: terapia_famila;
-      }
-      
-      .terapia_individual {
-        grid-area: terapia_individual;
-      }
-      
-      .terapia_pareja {
-        grid-area: terapia_pareja;
-      }
-
 }
+
 
 .presentacion {
     display: grid;
@@ -130,7 +135,7 @@
         grid-area: presentacion_txt;
         position: relative;
         bottom: 5%;
-        width: 750px;
+        width: 550px;
         h1 {
             font-weight: 900;
         }
@@ -141,7 +146,7 @@
         .saludo_txt {
             position: relative;
             top: 10%;
-            font-size: 1.145vw;
+            font-size: 2.125vh;
             
         }
     }
@@ -151,15 +156,43 @@
     }
 }
 
+@media (max-width: 767px) {
+    .presentacion {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        height: 1500px;
+        justify-content: space-around;
+        align-content: space-around;
+        grid-template-areas: "presentacion_img" "presentacion_txt";
+      }
+      
+      .presentacion_img {
+        grid-area: presentacion_img;
+      }
+      
+      .presentacion_txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-area: presentacion_txt;
+        .saludo_txt {
+            width: 70%;
+        }
+      }
+}
+
 
 .sistemico {
     height: 800px;
+}
     .sistemico_general {
         display: grid;
         grid-template-columns: 40% 60%;
         grid-template-rows: 100%;
-        gap: 0px 0px;
-        grid-auto-flow: row;
+        margin-top: 75px;
         grid-template-areas: "sistemico_box sistemico_info";
         height: 700px;
     }
@@ -176,8 +209,7 @@
         align-self: center;
         grid-area: sistemico_box;
         width: 75%;
-        height: 90%;
-        
+        height: 100%;
         box-shadow: 0px 10px 100px -3px rgba(49, 212, 253, 0.5);
         .sistemico_box_img {
             grid-area: sistemico_box_img;
@@ -189,6 +221,7 @@
         .sistemico_box_txt {
             grid-area: sistemico_box_txt;
             text-align: center;
+           
             h2 {
                 font-weight: 600;
                 margin: 15px 0px 15px 0px;
@@ -212,11 +245,48 @@
         
     }
     
+
+
+@media (max-width: 767px) {
+    .sistemico {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: space-around;
+        align-content: space-around;
+        grid-template-areas: "sistemico_general";
+      }
+      
+      .sistemico_general {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50fr 50fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "sistemico_box" "sistemico_info";
+        justify-self: stretch;
+        align-self: stretch;
+        grid-area: sistemico_general;
+      }
+      
+      .sistemico_box {
+        grid-area: sistemico_box;
+        height: 410px;
+        
+      }
+      
+      .sistemico_info {
+        grid-area: sistemico_info;
+      }
+      
 }
 
 .servicios {
     height: 600px;
     background-color: rgb(97, 184, 255);
+}
     .precios {
         display: grid;
         grid-template-columns: 20% 20% 20%;
@@ -370,11 +440,37 @@
         backface-visibility: hidden;
       }
       
+@media (max-width: 767px) {
+    .servicios{
+       height: 600px;
+    }
+    .precios {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: "precios_individual" "precios_pareja" "precios_familiar";
+      }
+      
+      .precios_individual {
+        grid-area: precios_individual;
+      }
+      
+      .precios_pareja {
+        grid-area: precios_pareja;
+      }
+      
+      .precios_familiar {
+        grid-area: precios_familiar;
+      }
 }
 
 .comentarios {
     height: 500px;
-    
+}
     .carousel {
         height: 500px;
     }
@@ -383,7 +479,7 @@
         height: 500px;
         width: 50%;
     }
-}
+
 
 .carousel-indicators [data-bs-target] {
   position: relative;
@@ -404,3 +500,13 @@
   border-radius: inherit;
 }
 
+@media (max-width: 767px) {
+    .comentarios {
+        height: 250px;
+    }
+    .d-block {
+        height: 250px;
+        width: 40%;
+    }
+    
+}
