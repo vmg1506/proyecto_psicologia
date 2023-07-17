@@ -5,14 +5,14 @@
     background-position: center top 25%;
     display: flex;
     justify-content: right;
-    height: 500px;
+    height: 300px;
     .portada_txt {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 300px;
-        width: 700px;
+        height: 10rem;
+        width: 35rem;
         border: white 4px solid;
         margin: 100px 100px 0px 0px;
         color: white;
@@ -28,8 +28,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 500px;
+    height: 400px;
     margin: 50px 0px 50px 0px;
+    
 }
     .asesorias {
         display: grid;
@@ -39,7 +40,15 @@
         grid-template-rows: 100%;
         grid-template-areas: 
         "asesoria_familia asesoria_individual asesoria_pareja";
-        font-size: 1.125vw;
+        text-align: center;
+        font-size: auto;
+        div{
+            img {
+                width: 8rem;
+                height: 8rem;
+            }
+        }
+        
     }
     .asesoria_familia {
         display: flex;
@@ -47,10 +56,7 @@
         align-items: center;
         text-align: center;
         grid-area: asesoria_familia;
-        img {
-            height: 200px;
-            width: 200px;
-        }
+        
     }
     .asesoria_individual {
         display: flex;
@@ -96,10 +102,10 @@
 
 .presentacion {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 100%;
     grid-template-areas: "presentacion_img presentacion_txt";
-    height: 800px;
+    height: 600px;
     background-image: url(../img/aquarela_3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -120,8 +126,9 @@
             box-shadow: -24px 0px 18px -1px rgba(0,0,0,0.87);
             -webkit-box-shadow: -24px 0px 18px -1px rgba(0,0,0,0.87);
             -moz-box-shadow: -24px 0px 18px -1px rgba(0,0,0,0.87);
-            height: 650px;
-            width: 500px;
+            height: 85%;
+            width: 50%;
+            margin: 0 auto;
         }
         
     
@@ -135,33 +142,37 @@
         grid-area: presentacion_txt;
         position: relative;
         bottom: 5%;
-        width: 550px;
+        width: 100%;
+        
         h1 {
             font-weight: 900;
         }
         .saludo {
             position: relative;
-            bottom: 10%;
+            bottom: 5%;
         }
         .saludo_txt {
             position: relative;
             top: 10%;
-            font-size: 2.125vh;
-            
+          
         }
     }
     .txt1, .txt2, .txt3 {
         font-weight: 600;
         padding-top: 15px;
+        
+        
     }
 }
+
+
 
 @media (max-width: 767px) {
     .presentacion {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
-        height: 1500px;
+        height: 1600px;
         justify-content: space-around;
         align-content: space-around;
         grid-template-areas: "presentacion_img" "presentacion_txt";
@@ -169,6 +180,7 @@
       
       .presentacion_img {
         grid-area: presentacion_img;
+    
       }
       
       .presentacion_txt {
@@ -186,15 +198,17 @@
 
 
 .sistemico {
-    height: 800px;
+    height: 450px;
+    
 }
     .sistemico_general {
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 100%;
-        margin-top: 75px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         grid-template-areas: "sistemico_box sistemico_info";
-        height: 700px;
+        height: 450px;
     }
     .sistemico_box {
         display: grid;
@@ -208,7 +222,7 @@
         justify-self: center;
         align-self: center;
         grid-area: sistemico_box;
-        width: 75%;
+        width: 85%;
         height: 100%;
         box-shadow: 0px 10px 100px -3px rgba(49, 212, 253, 0.5);
         .sistemico_box_img {
@@ -222,13 +236,12 @@
             grid-area: sistemico_box_txt;
             text-align: center;
            
+           
             h2 {
                 font-weight: 600;
                 margin: 15px 0px 15px 0px;
             }
-            p{
-                font-weight: 600;
-            }
+            
         }
     }
     .sistemico_info {
@@ -239,7 +252,7 @@
         text-align: center;
         h2 {
             font-weight: 600;
-            font-size: 3vw;
+            
         }
         
         
@@ -252,11 +265,11 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 100%;
-        gap: 0px 0px;
-        grid-auto-flow: row;
+        
         justify-content: space-around;
         align-content: space-around;
         grid-template-areas: "sistemico_general";
+        height: 600px;
       }
       
       .sistemico_general {
@@ -284,20 +297,20 @@
 }
 
 .servicios {
-    height: 600px;
+    height: 300px;
     background-color: rgb(97, 184, 255);
 }
     .precios {
         display: grid;
         grid-template-columns: 20% 20% 20%;
-        grid-template-rows: 70%;
+        grid-template-rows: 50%;
         grid-auto-rows: 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         justify-content: space-around;
         align-content: space-around;
         grid-template-areas: "precios_individual precios_pareja precios_familiar";
-        height: 600px;
+        height: 300px;
         text-align: center;
         
       }
@@ -319,6 +332,7 @@
             box-shadow: -20px 13px 100px 0px rgba(255, 255, 255, 0.6);
             transform-style: preserve-3d;
             transition: all 0.5s linear;
+            
             
             .card-body {
                 display: flex;
@@ -363,7 +377,7 @@
             margin: 0 auto;
             height: 100%;
             width: 100%;
-            border: 1px solid white;
+            border: 3px solid white;
             box-shadow: -20px 13px 100px 0px rgba(255, 255, 255, 0.6);
             transform-style: preserve-3d;
             transition: all 0.5s linear;
@@ -409,7 +423,7 @@
         margin: 0 auto;
             height: 100%;
             width: 100%;
-            border: 1px solid white;
+            border: 3px solid white;
             box-shadow: -20px 13px 100px 0px rgba(255, 255, 255, 0.6);
             transform-style: preserve-3d;
             transition: all 0.5s linear;
@@ -448,11 +462,11 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 33.3% 33.3% 33.3%;
-        gap: 0px 0px;
-        grid-auto-flow: row;
+        gap: 5px;
         justify-content: center;
         align-items: center;
         grid-template-areas: "precios_individual" "precios_pareja" "precios_familiar";
+        height: 100%;
       }
       
       .precios_individual {
