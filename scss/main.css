@@ -1534,7 +1534,7 @@
     justify-content: space-around;
     align-content: space-around;
     grid-template-areas: "sistemico_general";
-    height: 600px;
+    height: 650px;
   }
   .sistemico_general {
     display: grid;
@@ -1546,10 +1546,11 @@
     justify-self: stretch;
     align-self: stretch;
     grid-area: sistemico_general;
+    height: 100%;
   }
   .sistemico_box {
     grid-area: sistemico_box;
-    height: 410px;
+    height: 440px;
   }
   .sistemico_info {
     grid-area: sistemico_info;
