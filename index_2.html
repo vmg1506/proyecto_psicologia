@@ -11,7 +11,7 @@
 <body>
 
 <header>
-  <nav class="navbar navbar-expand-lg bg-primary-subtle">
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,10 +19,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="./pages/servicios.html">Servicios</a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
           <a class="nav-link" href="#">Features</a>
           <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </div>
       </div>
     </div>
@@ -30,23 +30,24 @@
 </header>
 <section class="portada">
     <div class="portada_txt">
-        <h1 class="text-md text-center fs-1">Valentina Grand Jaramillo</h1>
-        <h2 class="text-md text-center fs-3">Psicóloga</h2>
+             <img class="logo_valentina" src="./img/logo_2.png" alt="Psicologa, Valentina Grand Jaramillo">
+        <!-- <h1 class="text-md text-center fs-1">Valentina Grand Jaramillo</h1>
+        <h2 class="text-md text-center fs-3">Psicóloga</h2> -->
     </div>
 </section>
 <section class="servicios_1">
     <div class="asesorias">
-        <div class="asesoria_familia">
+        <div class="asesoria_familia" data-aos="fade-right">
             <img src="./img/familia (1).png" alt="">
             <h2>Asesoria Familiar</h2>
             <p>Pautas de crianza, estrategias de comunicación, fortalecimiento de vinculos.</p>
         </div>
-        <div class="asesoria_individual">
+        <div class="asesoria_individual" data-aos="fade-left">
             <img src="./img/psicoterapia (1).png" alt="">
             <h2>Psicoterapia Individual</h2>
             <p>Dirigida a niños, adolescentes y adultos en asuntos como Ansiedad, depresión, duelo por ruptura o pérdida, toma de decisiones, resolución de problemas, habilidades socioemocionales, autoestima, identidad.</p>
         </div>
-        <div class="asesoria_pareja">
+        <div class="asesoria_pareja" data-aos="fade-right">
             <img src="./img/pareja(1).png" alt="">
             <h2>Asesoria En Conflictos De Pareja</h2>
             <p>Resolución de conflictos, toma de decisiones y acuerdos.</p>
@@ -60,11 +61,11 @@
     </div>
 </span>
 <section class="presentacion">
-    <div class="presentacion_img">
+    <div class="presentacion_img" data-aos="zoom-in" data-aos-duration="2000">
         <div class="presentacion_img1"></div>
     </div>
-    <div class="presentacion_txt">
-        <h2 class="saludo text-wrap text-sm-center fs-5">Bienvenidos a todos, me presento:</h2>
+    <div class="presentacion_txt" data-aos="zoom-in-down" data-aos-duration="3000">
+        <h2 class="saludo text-wrap text-sm-center fs-4">Acerca de mi:</h2>
         <h1 class="text-wrap text-sm-center fs-1">Valentina Grand Jaramillo</h1>
         <h2 class="text-wrap text-sm-center fs-5">Psicóloga</h2>
         <p class="txt1 text-wrap text-sm-center fs-6">Psicóloga egresada de la Universidad Catolica Luis Amigó</p>
@@ -81,17 +82,21 @@
 </span>
 <section class="sistemico">
     <div class="sistemico_general">
-        <div class="sistemico_box">
+        <div class="sistemico_box" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
           <div class="sistemico_box_img"></div>
           <div class="sistemico_box_txt">
             <h2 class="text-wrap text-sm-center fs-5">Enfoque sistémico</h2>
             <P class="text-sm-center fs-6">Trabajo desde una perspectiva sistémica , la cual comprende que el desarrollo humano desde un enfoque relacional, en donde, la mayoría de los síntomas o conflictos están asociados a patrones de interacción disfuncionales en el entorno cercano del individuo, por lo tanto, la psicoterapia está enfocada en resignificar pensamientos, historias, relaciones y experiencias.</P>
           </div>
         </div>
-        <div class="sistemico_info">
+        <div class="sistemico_info" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
             <div>
-                <h2 class="text-wrap text-sm-center fs-4">"Te acompaño en un proceso de autoconocimiento y gestión emocional que te permita mejorar la relación contigo mismo/a y con tu entorno emocional"</h2>
+                <h2 class="sub_sistemico_info text-wrap text-sm-center fs-4">"Te acompaño en un proceso de autoconocimiento y gestión emocional que te permita mejorar la relación contigo mismo/a y con tu entorno emocional"</h2>
             </div>
+            <div class="sub_sistemico_link" id="box" align="center"><a rel="nofollow" href="https://www.psicologos.com.co/centros/valentina-grand-jaramillo?utm_source=417881&utm_medium=widget&utm_campaign=widget-company_stamp" target="_blank" ><img src="https://www.psicologos.com.co/stamp.xpng?com=417881&v=10" alt="enlace a psicologos.com, valentina grand jaramillo" border="0" /></a></div>
         </div>
       </div>
 </section>
@@ -106,7 +111,7 @@
                       
                     </div>
                     <div class="cara atras">
-                        <a href="#" class="btn btn-danger">Contáctame!</a>
+                        <a href="./pages/formulario.html" target="_blank" class="btn btn-danger">Contáctame!</a>
                     </div>
                 </div>
             </div>
@@ -118,7 +123,7 @@
                       <h4 class="card-text">$80.000 COP</h4>
                     </div>
                     <div class="cara atras">
-                        <a href="#" class="btn btn-danger">Contáctame!</a>
+                        <a href="./pages/formulario.html" target="_blank" class="btn btn-danger">Contáctame!</a>
                     </div>
                   </div>
             </div>
@@ -130,7 +135,7 @@
                       <h4 class="card-text">$80.000 COP</h4>
                     </div>
                     <div class="cara atras">
-                        <a href="#" class="btn btn-danger">Contáctame!</a>
+                        <a href="./pages/formulario.html" target="_blank" class="btn btn-danger">Contáctame!</a>
                     </div>
                 </div>
             </div>
@@ -178,12 +183,12 @@
 
   <footer class="py-3 my-4 bg-info">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="./img/facebook-icon.png" alt=""></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="./img/whatsapp-icon.png" alt=""></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="./img/instagram-icon.png" alt=""></a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="./img/linkedin-icon.png" alt=""></a></li>
+      <li class="nav-item"><a href="https://www.facebook.com/profile.php?id=100092512442655" target="_blank" class="nav-link px-2 text-muted"><img src="./img/facebook-icon.png" alt=""></a></li>
+      <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=573165846877" target="_blank" class="nav-link px-2 text-muted"><img src="./img/whatsapp-icon.png" alt=""></a></li>
+      <li class="nav-item"><a href="https://www.instagram.com/psico.valentinagrand/" target="_blank" class="nav-link px-2 text-muted"><img src="./img/instagram-icon.png" alt=""></a></li>
+      <li class="nav-item"><a href="https://www.linkedin.com/in/valentina-g-644083259" target="_blank" class="nav-link px-2 text-muted"><img src="./img/linkedin-icon.png" alt=""></a></li>
     </ul>
-    <p class="text-center text-muted">© 2023 Valentina Grand Jaramillo</p>
+    <p class="text-center text-muted fs-6">© 2023 Valentina Grand Jaramillo</p>
   </footer>
 
 
@@ -191,5 +196,9 @@
 
 <script src="./js/carusel.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

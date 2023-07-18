@@ -12,14 +12,20 @@
         justify-content: center;
         align-items: center;
         height: 10rem;
-        width: 35rem;
+        width: 25rem;
         border: white 4px solid;
         margin: 100px 100px 0px 0px;
         color: white;
         border-style: double;
+        backdrop-filter: blur(10px);
+        background-color: rgb(187, 187, 187, 0.4);
         h1 {
             font-size: 3.5vw;
             font-family: 'Dancing Script', cursive;
+        }
+        .logo_valentina {
+            width: 20rem;
+            height: 15rem;
         }
     }
 }
@@ -246,15 +252,28 @@
     }
     .sistemico_info {
         grid-area: sistemico_info;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "sub_sistemico_info"
+        "sub_sistemico_link";
         text-align: center;
         h2 {
             font-weight: 600;
             
         }
+    }
+    .sub_sistemico_info {
+        grid-area: sub_sistemico_info;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 50px;
         
+    }
+    .sub_sistemico_link {
+        grid-area: sub_sistemico_link;
         
     }
     
@@ -268,7 +287,7 @@
         justify-content: space-around;
         align-content: space-around;
         grid-template-areas: "sistemico_general";
-        height: 650px;
+        height: 850px;
       }
       
       .sistemico_general {
@@ -523,4 +542,13 @@
         width: 40%;
     }
     
+}
+
+footer {
+    height: 150px;
+
+    img {
+        height: 2rem;
+        width: 2rem;
+    }
 }
